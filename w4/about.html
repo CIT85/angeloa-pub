@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="icon" href="../img/breakdancing.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>About Me</h1>
+
+        <nav>
+            <h2 class="notunderline">Menu</h2>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-        </ul>
-    </nav>
 
     <hr>
     <figure>
@@ -27,7 +29,7 @@
     </figure>
 
     <section>
-        <h2>Why I'm Taking This Course</h2>
+        <h2 class="notunderline">Why I'm Taking This Course</h2>
         <ul>
             <li>
                 I am taking this course becasue I want to potentially pursue a career in Web Development and HTML is the structure of a webpage.
@@ -38,41 +40,57 @@
     <hr>
     <section>
         <h2>Scheduling</h2>
-        <p>
-            <label for="fullName">Full Name:</label>
-            <input name="fullName" type="text">
-        </p>
-        <p>
-            <label for="email">Email:</label>
-            <input name="email" type="email">
-        </p>
-        <p>
-            <label for="phone">Phone Number:</label>
-            <input name="phone" type="tel">
-        </p>
-        <p>
-            <label for="participants">Number of People:</label>
-            <input name="participants" type="number">
-        </p>
-        <p>
-            <label for="timeSlot">Time Slot:</label>
-            <select name="timeSlot" id="time-slot">
-                <option value="#">--- Select Time</option>
-                <option value="30 min">30 min</option>
-                <option value="40 min">40 min</option>
-                <option value="50 min">50 min</option>
-                <option value="60 min">60 min</option>
-            </select>
-        </p>
-        <button>Submit</button>
+        <form>
+            <p>
+                <label for="fullName">Full Name:</label>
+                <input name="fullName" type="text" placeholder="Jane Doe">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input name="email" type="email" placeholder="janedoe@gmail.com">
+            </p>
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input name="phone" type="tel" placeholder="(123)-(456)-(7890)">
+            </p>
+            <p>
+                <label for="participants">Number of People:</label>
+                <input name="participants" type="number">
+            </p>
+            <p>
+                <label for="timeSlot">Time Slot:</label>
+                <select name="timeSlot" id="time-slot">
+                    <option value="#">--- Select Time</option>
+                    <option value="30 min">30 min</option>
+                    <option value="40 min">40 min</option>
+                    <option value="50 min">50 min</option>
+                    <option value="60 min">60 min</option>
+                </select>
+            </p>
+
+            <button>Submit</button>
+        </form>
+        
     </section>
     <section>
-        <h2>Working With ChatGPT</h2>
+        <h2 class="notunderline">Working With ChatGPT</h2>
         <ul>
             <li>
                 My experience using ChatGPT for researching breakdance made gathering content easier in comparision to me just providing the content.
             </li>
         </ul>
     </section>
+
+    <footer>
+        <p>
+          &it;&it;&it; &copy; <a href="about.html">Angelo Andrade</a> &gt;&gt;&gt;
+        </p>
+        <p>
+          <a href="sitemap.html">Site Map</a>
+        </p>
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+      </footer>
 </body>
 </html>
