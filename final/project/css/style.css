@@ -86,7 +86,7 @@ nav li {
     text-align: center; /*center text*/
     color: #fff; /*text color change*/
     font-weight: bold;
-    background-image: url(../img/welcomebackground-min.jpg);
+    background-image: url(final/img/welcomebackground-min.jpg);
     background-size: cover;
  }
 
