@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    /* outline: 2px solid red; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ /* BODY */
+ body {
+    background-color: #DAD7CD;  /* change background color for entire page */
+    height: 100%;
+ }
+
+ /* MAIN */
+ main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+/* HEADER */
+/* center and position navagation section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A3B18A;
+    list-style: none;
+    padding: 0px;
+    border: 2px solid #344E41;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    height: 70px;
+}
+header h1{
+    color: #fff;
+    text-shadow: .5px .5px 1.5px #000;
+    text-align: center;
+}
+
+header h2 { 
+    visibility: hidden; /* hide menu heading */
+    position:fixed;
+}
+
+nav {
+    display: flex;
+    align-self: center;
+}
+
+nav ul {
+    display: flex; /*apply flexbox for layout*/
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-left: 20px;
+    font-weight: bolder;
+} 
+
+/* nav ul li {
+    margin-right: 20px;
+} */
+ nav a {
+    color: #344E41;
+    text-decoration: none;
+ }
+
+ /* SECTION */
+ section h2 {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 20px 0 0 20px;
+ }
+
+ /* WELCOME */
+ .welcome {
+    text-align: center; /*center text*/
+    color: #fff; /*text color change*/
+    font-weight: bold;
+    background-image: url(/img/welcomebackground-min.jpg);
+    background-size: cover;
+ }
+
+ .welcome img {
+    border: 2rem double #A3B18A;
+    border-radius: 50%; /* image is rounded */
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+ }
+
+ .welcome p {
+    margin: 10px 10px;
+    padding: 10px;
+ }
+
+ /* ARTICLE */
+ /* all articles styled with
+ black border, gradient background, positioned, and 
+ borders corners rounded */
+article {
+    border: 2px solid #000;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(#588157, #fff);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.space article{
+    height: 180px;
+    width: 100%;
+    padding: 15px;
+}
+
+.space details {
+    margin-top: 1rem;
+}
+
+/* pollution section*/
+.pollution-container {
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 2rem;
+}
+
+.pollution h2 {
+    padding: 1rem;
+    border-radius: 20px; /* round corners */
+    margin: auto; /* center h2 */
+}
+
+.pollution-container article {
+    border-radius: 20px;
+}
+
+.pollution-container h3 {
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.env-groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px;
+    color: #000;
+}
+
+.env-groups article {
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+.env-groups h2 {
+    color: #fff;
+    border: 2px solid #000;
+    background-color: #588157;
+    background: linear-gradient( #344E41, #588157);
+    /* border-radius: 10px; */
+}
+
+.env-groups li {
+    list-style: none;
+    margin: .5rem;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column; /* Display vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.contact {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+    height: 400px;
+}
+
+/* CLIMATE CHANGE PAGE  */
+.melting-ice {
+    text-align: center; /*center text*/
+    padding: 20px;
+    list-style: none; /*remove bulltet points*/
+}
+.melting-ice figure, p {
+    margin-bottom: 1rem;
+}
+.melting-ice img {
+    border: 2px solid #000;
+}
+.melting-ice ul {
+    list-style: none;
+}
+
+/* SUSTAINABLE LIVING */
+
+.img-layout {
+    display: flex;
+    align-items: flex-start; /* text is at the top of article*/
+    margin-top: 20px; /* Add some space between sections */
+    text-align: center;
+}
+
+.img-layout img {
+    border: 2rem double #A3B18A;
+    width: auto;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px; /* Add some space between image and text */
+}
+
+.img-layout p {
+    margin: 0 2rem;
+}
+
+/*ZERO WASTE APROACH*/
+.zero-waste-layout{
+    display: flex;
+    align-items: flex-start; /* Align items vertically */
+    margin-top: 20px; /* Add some space between sections */
+    text-align: center; /* Center text within the container */
+}
+
+.zero-waste-approach img {
+    margin-left: 20px; /* Add some space between image and text */
+}
+
+.zero-waste-approach .img-layout p {
+    width: auto;
+    height: 200px;
+    margin-right: 20px; /* Add some space between image and text */
+}
+
+/* POLLUTION */
+.plastic-pollution, .water-pollution {
+    text-align: center; /* center text*/
+}
+.plastic-pollution img {
+    margin-top: 1rem;
+}
+
+/* TABLE */
+/* all tables styled green and white color scheme */
+table {
+    position:relative;
+    border-collapse: collapse; /*border spacing*/
+    width: 100%;
+    margin: 1.5rem;
+}
+table, th, td {
+    border: 1px solid #000;
+    padding: 5px;
+    margin: auto;
+}
+
+table td {
+    background-color: #fff;
+}
+
+table th {
+    color: #fff;
+    background-color: #3A5A40;
+}
+
+.round article{
+    border-radius: 20px;
+    margin: 1rem;
+}
+
+.round section {
+    border-radius: 20px;
+    margin: 1rem;
+}
+
+/* SITEMAP */
+/* center text for color palette section in sitemap */
+.color-palette {
+    text-align: center;
+}
+/* position text content and layout */
+.sitemap {
+    padding: 15px;
+    margin: 2rem 2rem;
+}
+
+
+/* FOOTER */
+/* all footers styled with green background,
+text is inline same row,
+and links color is green*/
+.footer-container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+   
+}
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    background-color: #344E41;
+    color: #fff;
+    width: 100%;
+    height: 80px;
+}
+
+footer a {
+    color: #A3B18A;
+}
+/* style link for going back to top
+white text and on the right side of footer */
+.top-link a{
+    color: #fff;
+    font-size: 1.20rem;
+    position: fixed; /* behavior is fixed */
+    bottom: 20px; 
+    right: 20px; 
+}
+
+/*HOVER*/
+nav a:hover {
+    color: #000; /* change color on hover */
+    text-decoration: underline; /* Underline on hover */
+    transition: color 0.3s ease;
+}
+
+
+
+/*MEDIA QUERIES*/
+/*MOBILE DEVICES*/
+@media (max-width: 481px) {
+    body {
+        width: 100%;
+        overflow: hidden;
+        font-size: 1rem; 
+    }
+    header h1 {
+        font-size: .75rem;
+    }
+    header {
+       font-size: .75rem;
+       flex-direction: column; /*navigation and heading stakced*/
+       justify-content: space-around;
+       height: 10vh;
+       padding: 10px;
+       text-align: center; /*text centered*/
+    }
+    /*home page*/
+    .welcome img {
+        width: 70vw; /*resize width for image*/
+
+    }
+    .env-groups {
+        display: flex;
+        flex-direction: column; /*makes sections stack*/
+    }
+    .env-groups h2, article {
+        border-radius: 20px; /*rounds all edges*/
+    }
+
+    .pollution-container {
+        flex-direction: column;/*collapses and stacks*/
+    }
+    /*About page*/
+    .contact {
+        width: 80vw;/*resizes contact section*/
+    }
+
+    /* sustainable living*/
+    .sustainable-fashion,
+    .zero-waste-approach {
+        text-align: center;/*center text*/
+    }
+    .img-layout {
+        display: inline-block; /*changes layout*/
+    }
+
+    /*sitemap image*/
+    .color-palette img {
+        width: 80vw;
+        height: auto;
+    }
+}
+/* iPads, Tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.2rem;/*resize heading*/
+    }
+
+    .sustainable-fashion,
+    .zero-waste-approach {
+        text-align: center;/*centers text*/
+    }
+
+    .img-layout {
+        display: inline-block;/*change layout*/
+    }
+
+    /*sitemap image*/
+    .color-palette img {
+        width: 90vw;
+        height: auto;
+    }
+}
+/* Small screens, laptops */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 1.3rem;/*changes heading size*/
+    }
+}
+
+/* Desktops, large screens */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 1.5rem;/*changes heading size*/
+    }
+}
+
+/* Extra large screens, TV */
+@media (min-width: 1201px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+}
