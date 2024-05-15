@@ -304,6 +304,50 @@ table th {
     text-align: center;
 }
 
+.contact {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    width: 60%; /*change width*/
+    height: auto; /* Change height */
+    background-color: #DAD7CD; /* background color */
+}
+
+
+.contact label {
+    margin-bottom: 10px;/*margin bottom space underneath*/
+    color: #344E41;/*change text color*/
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 80%; /*change width*/
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;/*round input corners*/
+    border: 1px solid #344E41; /*border for inputs*/
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px; /*round corners of button*/
+    border: none;
+    background-color: #A3B18A; /*background color green*/
+    color: #fff;/*text color white*/
+    transition: background-color 0.3s ease; /*change color when hover*/
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #588157; /* Match button hover background color */
+}
+
 /* FOOTER */
 /* all footers styled with green background,
 text is inline same row,
